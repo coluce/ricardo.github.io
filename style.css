@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.menu {
+    width: 240px;
+    background-color: #333;
+    height: 100vh;
+    position: fixed;
+}
+
+.menu h2 {
+    color: white;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 10px 16px; /* 10px vertical, 16px horizontal */
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #444;
+}
+
+.menu-header {
+  color: white;
+  background-color: #444;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+.menu-body {
+    padding: 10px;
+}
+
+.menu-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #444;
+  color: white;
+  text-align: center;
+}
+
+.conteudo {
+    margin-left: 240px;
+    padding: 20px;
+}
