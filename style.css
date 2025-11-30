@@ -60,6 +60,11 @@ body {
     color: white;
 }
 
+/* só quando dois .perfil aparecem seguidos */
+.perfil + .perfil {
+  margin-top: 2rem;
+}
+
 .perfil img {
     width: 150px;
     border-radius: 50%;
