@@ -53,3 +53,21 @@ body {
     margin-left: 240px;
     padding: 20px;
 }
+
+.perfil {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.perfil img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+section {
+    background: #555;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+}
