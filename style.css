@@ -39,6 +39,24 @@ body {
     padding: 10px;
 }
 
+.menu-body a.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-item .icon { 
+  width: 20px; 
+  height: 20px;
+  display: inline-block;
+}
+
+/* para SVG inline permita colorização via currentColor */
+.menu-item svg.icon { color: inherit; }
+
+/* ajuste visual */
+.menu-item .label { font-size: 18px; color: white; }
+
 .menu-footer {
   position: absolute;
   left: 0;

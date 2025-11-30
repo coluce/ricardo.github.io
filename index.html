@@ -12,10 +12,41 @@
         <h1>Menu</h1>
     </div>
     <div class="menu-body">
-        <a href="#" onclick="carregarPagina('home')">🏠 Início</a>
-        <a href="#" onclick="carregarPagina('objectives')">🎯 Objetivos</a>
-        <a href="#" onclick="carregarPagina('links')">🔗 Links</a>
-        <a href="#" onclick="carregarPagina('about')">ℹ️ Sobre</a>
+    <div class="menu-body">
+        <a href="#" onclick="carregarPagina('home')" class="menu-item" aria-label="Início">
+            <!-- exemplo de ícone SVG (Home) -->
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 11.5L12 4L21 11.5V20C21 20.5523 20.5523 21 20 21H16C15.4477 21 15 20.5523 15 20V15C15 14.4477 14.5523 14 14 14H10C9.44772 14 9 14.4477 9 15V20C9 20.5523 8.55228 21 8 21H4C3.44772 21 3 20.5523 3 20V11.5Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="tooltip">Início</span>
+        </a>
+
+        <a href="#" onclick="carregarPagina('objectives')" class="menu-item" aria-label="Objetivos">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M12 8V12L14 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="tooltip">Objetivos</span>
+        </a>
+
+        <a href="#" onclick="carregarPagina('links')" class="menu-item" aria-label="Links">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 14L14 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.5 16.5A3.5 3.5 0 0 0 11 13L12 12A3.5 3.5 0 0 0 9 9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.5 7.5A3.5 3.5 0 0 0 13 11L12 12A3.5 3.5 0 0 0 15 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="tooltip">Links</span>
+        </a>
+
+        <a href="#" onclick="carregarPagina('about')" class="menu-item" aria-label="Sobre">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M12 8H12.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                <path d="M11 12H13V16H11V12Z" fill="currentColor"/>
+            </svg>
+            <span class="tooltip">Sobre</span>
+        </a>
+    </div>
     </div>
     <div class="menu-footer">
         <h1>Footer</h1>
