@@ -52,10 +52,15 @@ body {
 }
 
 /* para SVG inline permita colorização via currentColor */
-.menu-item svg.icon { color: inherit; }
+.menu-item svg.icon { 
+    color: inherit; 
+}
 
 /* ajuste visual */
-.menu-item .label { font-size: 18px; color: white; }
+.menu-item .label { 
+    font-size: 18px; 
+    color: white; 
+}
 
 .menu-footer {
   position: absolute;
