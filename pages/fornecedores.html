@@ -1,0 +1,56 @@
+<div class="categorias-container">
+    <h1>🏷️ Fornecedores</h1>
+
+    <div class="form-adicionar">
+        <h2>Adicionar Novo Fornecedor</h2>
+        <form id="formFornecedor" onsubmit="adicionarFornecedor(event)">
+            <div class="form-group">
+                <label for="inputNomeFornecedor">Nome do Fornecedor:</label>
+                <input type="text" id="inputNomeFornecedor" placeholder="Ex: Papelaria ABC" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Adicionar Fornecedor</button>
+        </form>
+    </div>
+
+    <div class="tabela-container">
+        <h2>Fornecedores Cadastrados</h2>
+        <table id="tabelaFornecedores" class="tabela-categorias">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="corpoFornecedores">
+                <!-- Preenchido por JavaScript -->
+            </tbody>
+        </table>
+        <div id="mensagemVaziaFornecedores" class="mensagem-vazia">
+            Nenhum fornecedor cadastrado. Adicione um acima!
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Edição de Fornecedor -->
+<div id="modalEdicaoFornecedor" class="modal-overlay" onclick="fecharModalEdicaoFornecedor(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="modal-header">
+            <h2>Editar Fornecedor</h2>
+            <button class="modal-close" onclick="fecharModalEdicaoFornecedor()">&times;</button>
+        </div>
+
+        <form id="formEdicaoFornecedor" onsubmit="salvarEdicaoFornecedor(event)">
+            <div class="form-group">
+                <label for="editNomeFornecedor">Nome do Fornecedor:</label>
+                <input type="text" id="editNomeFornecedor" placeholder="Ex: Papelaria ABC" required>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="fecharModalEdicaoFornecedor()">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+            </div>
+        </form>
+    </div>
+</div>
